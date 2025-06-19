@@ -74,7 +74,7 @@ y_test = label_encoder.transform(y_test)
 print(f"Encoded y_train: {y_train[:5]}")
 print(f"Number of classes: {len(label_encoder.classes_)}")
 
-m,n = 64
+m,n = X_train.size(), y_train.size()
 
 def init_params():
     W1 = np.random.rand(10, 64) - 0.5
